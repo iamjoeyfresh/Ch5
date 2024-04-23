@@ -1,0 +1,162 @@
+/* 
+author: Jospeh Sutton
+date: 04/03/24
+file name: Styles.css
+*/
+
+/*
+ CSS Reset
+*/
+
+body, header, nav, main, footer, img, h1, h3 {
+    Margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* 
+style rule for body and image
+*/
+
+body {
+    background-color: #f6eee4;
+}
+ 
+/* 
+style rule for image
+*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*
+Style rule for mobile viewport
+*/
+
+/*
+Style rule for show mobile class and hide tab-desk class
+*/
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/*
+Style rude for header area
+*/
+
+h1 {
+    padding 2%
+    text-align: center;
+    .emblema-one-regular {
+        font-family: "Emblema One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+
+h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/* 
+style rule for header content
+*/
+
+header h1 {
+      text-align: center;
+      font-size: 3em; 
+      font-style:italic;
+      color: #373684;
+}
+
+/*
+Style rules for navigation area
+*/
+nav{
+  background-color: #2a1f14;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+
+}
+
+/* 
+style rules for main content
+*/
+
+Main {
+    padding: 2%; 
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.25em;
+}
+
+Main h3 {
+padding-top: 2%;
+}
+
+main ul {
+    list-style: square;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact  {
+     text-align: center;
+    }
+
+/* 
+Style rules for footer content 
+*/
+
+footer  {
+    text-align: center;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    font-size: 0.85em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
