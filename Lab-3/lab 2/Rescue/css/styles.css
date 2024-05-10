@@ -8,7 +8,15 @@ file name: Styles.css
  CSS Reset
 */
 
-body, header, nav, main, footer, img, h1, h3 {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3, 
+ul {
     Margin: 0;
     padding: 0;
     border: 0;
@@ -21,7 +29,7 @@ style rule for body and image
 body {
     background-color: #f6eee4;
 }
- 
+
 /* 
 style rule for image
 */
@@ -32,12 +40,32 @@ img {
 }
 
 /*
-Style rule for mobile viewport
+style rule for mobile veiwport
 */
 
+h1 {
+    .emblema-one-regular {
+        font-family: "Emblema One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }      
+}
+
+h3 {
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+}
 /*
-Style rule for show mobile class and hide tab-desk class
+Style rules to show mobile class and hide tab-desk class
 */
+
 .mobile {
     display: block;
 }
@@ -46,22 +74,11 @@ Style rule for show mobile class and hide tab-desk class
     display: none;
 }
 
-/*
-Style rude for header area
+/* 
+style rules for header area
 */
 
-h1 {
-    padding 2%
-    text-align: center;
-    .emblema-one-regular {
-        font-family: "Emblema One", system-ui;
-        font-weight: 400;
-        font-style: normal;
-      }
-      
-}
-
-h3 {
+h1, h3 {
     padding: 2%;
     text-align: center;
 }
@@ -71,41 +88,42 @@ style rule for header content
 */
 
 header h1 {
-      text-align: center;
-      font-size: 3em; 
-      font-style:italic;
-      color: #373684;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    color: #373684;
 }
 
 /*
 Style rules for navigation area
 */
-nav{
-  background-color: #2a1f14;
+nav {
+    background-color: #2a1f14;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
+    list-style-type: none;
+    text-align: center;
 }
 
 nav li {
-  display: inline-block;
-  font-size: 1.5em;
-  font: Geneva, Arial, sans-serif;
-  font-weight: bold;
+    display: block;
+    font-size: 1.5em;
+    font: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px;
+    color: #f6eee4;
 }
 
 nav li a {
-  display: block;
-  color: #f6eee4;
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
+    display: block;
+    color: #f6eee4;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
 
 }
 
@@ -114,8 +132,17 @@ style rules for main content
 */
 
 Main {
-    padding: 2%; 
+    padding: 2%;
     font-family: Verdana, Arial, sans-serif;
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 }
 
 main p {
@@ -124,12 +151,19 @@ main p {
     font-size: 1.25em;
 }
 
-Main h3 {
-padding-top: 2%;
+h3 {
+    padding-top: 2%;
 }
 
 main ul {
     list-style: square;
+}
+
+.link {
+    color:#4d3319 ;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .action {
@@ -138,15 +172,36 @@ main ul {
     text-align: center;
 }
 
-#contact  {
-     text-align: center;
-    }
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* 
 Style rules for footer content 
 */
 
-footer  {
+footer {
     text-align: center;
     background-color: #2a1f14;
     color: #f6eee4;
@@ -156,6 +211,7 @@ footer  {
     padding-left: 0%;
     padding-right: 0%;
 }
+
 footer a {
     color: #f3e6d8;
     text-decoration: none;
